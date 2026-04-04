@@ -25,7 +25,7 @@ const Sidebar = () => {
       <div className='top'>
         <div className='top'>
           <Link to='/' style={{ textDecoration: 'none', color: '#222222' }}>
-            <span className='logo'>FinTrak</span>
+            <span className='logo'>FinOrbit</span>
           </Link>
         </div>
       </div>
