@@ -1,0 +1,82 @@
+@import '../../Helper/helper.scss';
+
+.request {
+  display: flex;
+  width: 100%;
+  .requestContainer {
+    flex: 6;
+    .requests {
+      padding: 1.25rem;
+      h1 {
+        @include headingOne();
+      }
+      .requestsList {
+        @include Shadow();
+        .tableHead {
+          @include tableHead();
+        }
+        @include dateAndTime();
+        .cellWrapper {
+          @include cellWrapper();
+        }
+        .accept {
+          @include requestStatus($primaryColor, $white);
+          cursor: pointer;
+        }
+        .pending {
+          @include requestStatus($pendingBg, $pendingColor);
+        }
+        .paid {
+          @include requestStatus($paidBg, $paidColor);
+          cursor: pointer;
+        }
+        .accepted {
+          @include requestStatus($acceptedBg, $acceptedColor);
+        }
+      }
+    }
+  }
+  .singleTab.Mui-selected {
+    color: $primaryColor;
+  }
+  .MuiTabs-indicator {
+    background-color: $primaryColor;
+  }
+}
+.actionButtons {
+  display: flex;
+  gap: 0.5rem;
+
+  .accept {
+    background-color: #4caf50;
+    color: white;
+  }
+
+  .later {
+    background-color: #ff9800;
+    color: white;
+  }
+
+  .deny {
+    background-color: #f44336;
+    color: white;
+  }
+
+  button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}
+.requestStatus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $white;
+  }
+

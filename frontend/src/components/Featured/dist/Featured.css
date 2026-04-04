@@ -1,0 +1,81 @@
+.featured {
+  flex: 2;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.3);
+  padding: 0.625rem;
+}
+
+.featured .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: gray;
+}
+
+.featured .top .title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.featured .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.938rem;
+}
+
+.featured .bottom .featuredChart {
+  width: 6.125rem;
+  height: 6.125rem;
+}
+
+.featured .bottom .title {
+  font-weight: 500;
+  color: gray;
+}
+
+.featured .bottom .amount {
+  font-size: 1.875rem;
+}
+
+.featured .bottom .desc {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: gray;
+  text-align: center;
+}
+
+.featured .bottom .summary {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.featured .bottom .summary .item {
+  text-align: center;
+}
+
+.featured .bottom .summary .item .itemTitle {
+  font-size: 0.875rem;
+  color: gray;
+  font-weight: 500;
+}
+
+.featured .bottom .summary .item .itemResult {
+  display: flex;
+  align-items: center;
+  margin-top: 0.625rem;
+  font-size: 0.875rem;
+}
+
+.featured .bottom .summary .item .itemResult.negative {
+  color: red;
+}
+
+.featured .bottom .summary .item .itemResult.positive {
+  color: green;
+}
+
+/*# sourceMappingURL=Featured.css.map */
